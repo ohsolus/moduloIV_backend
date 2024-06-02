@@ -1,7 +1,7 @@
 import express from "express";
-import mysql from "mysql";
 import cors from "cors";
 import dotenv from "dotenv";
+import mysql from "mysql2";
 
 // Cargar variables de entorno desde el archivo .env
 dotenv.config();
