@@ -13,6 +13,7 @@ const db = mysql.createConnection({
   user: "root",
   password: "RJLXrcaRIRRQXxxlBnTVvhgdBHVDAXdF",
   database: "railway",
+  port: 36608,
 });
 
 app.use(express.json());
@@ -63,6 +64,6 @@ app.put("/offert/:idOfferts", (req, res) => {
   });
 });
 
-app.listen(36608, () => {
+app.listen(8800, () => {
   console.log("connected to backend!");
 });
